@@ -60,7 +60,7 @@
     }
 
     getProp(id, defaultValue = undefined) {
-      if(!this.properties.has(id)) {
+      if (!this.properties.has(id)) {
         return defaultValue;
       }
       return this.properties.get(id);
