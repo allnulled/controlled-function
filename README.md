@@ -19,7 +19,7 @@ require("@allnulled/controlled-function");
 In browser:
 
 ```html
-<script src="node_modules/@allnulled/controlled-function"></script>
+<script src="node_modules/@allnulled/controlled-function/controlled-function.js"></script>
 ```
 
 ## Usage
