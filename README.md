@@ -4,12 +4,11 @@ API to return values through 1 outter function scope.
 
 Allows both:
 
-  - The **trascendent if** pattern
-  - The **stuck while** pattern, easying the **coliving combination** of others like:
-     - The **energetical while** pattern
-     - The **timed-out while** pattern
-     - The **timed-out while** pattern
-
+  - The **trascendent condition/if** pattern
+  - The **stuck loop/while** pattern, easying the **coliving combination** of others like:
+     - The **energetical while** pattern, like a being.
+     - The **timed-out while** pattern, like a shortcircuit.
+     - Probably others.
 
 ## Installation
 
@@ -272,3 +271,8 @@ describe("ControlledFunction API Test", function() {
 
 });
 ```
+
+
+## Conclusion
+
+Let's see in the future. But I found this pattern useful because combining only 2 middlewares, I can get these 2 artifacts, from the basic `ReturnControl` API + the `MutateControl` API. The `MutateControl` API can be powerfull with `controller.hooks`, I think.
