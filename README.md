@@ -83,9 +83,11 @@ Podemos crear **condiciones supertrascendentes** con **retornos trascendentes**.
 
 ```js
 control.reset();
+// Iniciamos en 100 punto de energía:
 control.prop({ cycles: 100 });
 control.hook(c => {
-    if(c.properties.energy === 0) {
+    if(c.properties.cycles === 0) {
+        // Implementamos la ley de no-energía:
         return new ReturnControl("No more cycles");
     }
 });
@@ -93,7 +95,8 @@ control.load({
     step1(c) {
         return new MutateControl(c => {
             return {
-                cicles: c.properties.cicles - 1
+                // Restamos 1 punto de energía en el step1:
+                cycles: c.properties.cicles - 1
             };
         });
     }
